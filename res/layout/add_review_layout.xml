@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+
+            <RelativeLayout
+                android:id="@+id/writeReview_heading_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/nav_bar" >
+
+                <TextView
+                    android:id="@+id/txt_writeReview_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:shadowColor="@color/black"
+                    android:text="Write A Review"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </RelativeLayout><RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/writeReview_heading_layout"
+        android:layout_centerInParent="true" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/txtLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/writeReview_heading_layout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/txt_writeReview_tapStar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="@color/black"
+                        android:text="TAP A STAR TO RATE"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/ratingbar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_writeReview_tapStar"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/star_unclicked" />
+
+                    <ImageButton
+                        android:id="@+id/ratingbar2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_writeReview_tapStar"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/ratingbar1"
+                        android:background="@drawable/star_unclicked" />
+
+                    <ImageButton
+                        android:id="@+id/ratingbar3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_writeReview_tapStar"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/ratingbar2"
+                        android:background="@drawable/star_unclicked" />
+
+                    <ImageButton
+                        android:id="@+id/ratingbar4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_writeReview_tapStar"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/ratingbar3"
+                        android:background="@drawable/star_unclicked" />
+
+                    <ImageButton
+                        android:id="@+id/ratingbar5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_writeReview_tapStar"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/ratingbar4"
+                        android:background="@drawable/star_unclicked" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/txtLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLayout1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp" >
+
+                    <EditText
+                        android:id="@+id/edt_writeReview_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/textbg1"
+                        android:hint="title..."
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <!--
+             <ImageView
+            android:id="@+id/txt_writeReview_seperator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_writeReview_title"
+            android:background="@drawable/txtdivider" />
+                    -->
+
+                    <EditText
+                        android:id="@+id/edt_writeReview_review"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edt_writeReview_title"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/textbg2"
+                        android:gravity="top"
+                        android:hint="Your review..."
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_writeReview_Rvw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/txtLayout2"
+                    android:layout_below="@id/txtLayout2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/submit_btn" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

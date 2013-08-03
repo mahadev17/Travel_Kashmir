@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/home_heading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/nav_bar" >
+
+        <Button
+            android:id="@+id/btn_homeback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:background="@drawable/btn_back1" />
+
+        
+        <TextView
+            android:id="@+id/headng_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travel Kashmir"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"/>
+
+            </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/hotel_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_heading_layout"
+        android:cacheColorHint="#00000000"
+        android:fastScrollEnabled="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:smoothScrollbar="true"
+        android:divider="@drawable/divider"
+        android:dividerHeight="1dp">
+    </ListView>
+</RelativeLayout>

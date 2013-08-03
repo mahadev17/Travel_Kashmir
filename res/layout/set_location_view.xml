@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/heading_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_bar" >
+        
+        <TextView
+            android:id="@+id/location_heading_txt"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Hotel Location"
+        	android:textColor="@color/white"
+        	android:textSize="20dp"
+        	android:layout_centerInParent="true"
+            />
+        
+     </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mapLayoutsearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/heading_relative"
+        android:orientation="vertical" >
+
+
+    <com.google.android.maps.MapView
+	    android:id="@+id/map_locationSearch"
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    android:apiKey="0Ai_CJ1r1Hwc4RmG7IK_I1vQvx5-TQzK-BXzdJA"
+	    android:clickable="true"
+	    android:enabled="true" />
+   
+    <ImageView
+            android:id="@+id/drag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map_pin"
+            android:visibility="gone" />
+	
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/txt_homedetail_reviewlist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Micheal Oven"
+            android:textSize="18sp" />
+
+        <RatingBar
+            android:id="@+id/ratingbar_homedetail_reviewlist"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_homedetail_reviewlist_name"
+            android:layout_marginLeft="10dp"
+            android:numStars="5"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/txt_homedetail_reviewlist_desription"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingbar_homedetail_reviewlist"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Micheal Oven is a football player and for england agist brazil sssssssssssss" />
+
+        <ImageView
+            android:id="@+id/img_homedetail_reviewlist_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/arrow_icon_red" 
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

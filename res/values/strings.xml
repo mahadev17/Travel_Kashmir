@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">TravelSearch</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="grey">#FF909090</color>
+<color name="skyblue">#0bbdf8</color>
+<string name="please_wait">Please Wait</string>
+</resources>

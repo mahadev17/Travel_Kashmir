@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relative12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Large Text is great but not accurate"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+       <!--  <Button
+            android:id="@+id/btnReviewShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/share_btn" /> -->
+
+        <TextView
+            android:id="@+id/textViewUseName"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_marginTop="3dp"
+            android:text="Large Text asal;slasl;als;laslsa;ls;als;laslddfffffs"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUseName"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/rating_5" />
+
+        <TextView
+            android:id="@+id/textViewReviewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUseName"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/imgRating"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgRating"
+            android:layout_marginTop="2dp"
+            android:text="Large Text"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        
+    </RelativeLayout>
+<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/relative12"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/black" >
+        </LinearLayout>
+</RelativeLayout>

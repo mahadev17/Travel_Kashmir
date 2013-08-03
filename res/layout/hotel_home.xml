@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/home_heading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/nav_bar" >
+
+        <Button
+            android:id="@+id/btn_homeback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:background="@drawable/btn_back1" />
+
+        
+        <TextView
+            android:id="@+id/headng_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travel Kashmir"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"/>
+
+               
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/home_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_heading_layout"
+        android:background="@drawable/green_bar"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/edt_homesearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/search_bg_green"
+            android:hint="Search"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="35dp"
+            android:singleLine="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/categoryScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_search_layout"
+        android:scrollbarAlwaysDrawHorizontalTrack="true" >
+        <LinearLayout
+            android:id="@+id/categoryLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+       
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/hotel_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoryScroll"
+        android:cacheColorHint="#00000000"
+        android:fastScrollEnabled="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:smoothScrollbar="true"
+        android:divider="@drawable/divider"
+        android:dividerHeight="1dp">
+    </ListView>
+</RelativeLayout>

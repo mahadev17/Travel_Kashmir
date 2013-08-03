@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/setting_heading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navigation" >
+
+        <TextView
+            android:id="@+id/txt_setting_headng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shadowColor="@color/black"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_settingsSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/save_btn" 
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_prefLayt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_heading_layout"
+        android:background="@drawable/nav_bar" >
+
+        <TextView
+            android:id="@+id/txt_settingPrefernce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shadowColor="@color/black"
+            android:text="Preference"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_prefLayt" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <RadioButton
+                android:id="@+id/radio_Km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button"
+                android:text="Kilometer"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radio_Miles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button"
+                android:text="Miles/Yard"
+                android:textSize="18sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_setting_findLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Find the location"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_setting_within"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_setting_findLocation"
+        android:layout_centerInParent="true"
+        android:text="within"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_setting_within"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp" >
+
+      <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_5Mile"
+            android:background="@drawable/btn_5"
+             />
+       <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_10Mile"
+            android:background="@drawable/btn_10"
+            android:layout_toRightOf="@id/btn_5Mile"
+             />
+       <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_15Mile"
+            android:background="@drawable/btn_15"
+            android:layout_toRightOf="@id/btn_10Mile"
+             />
+    </RelativeLayout>
+
+</RelativeLayout>
